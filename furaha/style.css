@@ -1,0 +1,61 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body
+{
+  background-image: url("furaha2.png");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  
+}
+.menu-bar{
+  background-color: palevioletred;
+  text-align: center;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: rgb(19, 19, 7);
+}
+.menu-bar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color:black
+}
+.active, .menu-bar ul li:hover{
+  background: #bfa35d;
+  border-radius: 3px;
+}
+.menu-bar{
+  margin: 8px;
+}
+.sub-menu-1{
+display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+  display:block;
+  position: absolute;
+  background:#bfa35d;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 300px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
